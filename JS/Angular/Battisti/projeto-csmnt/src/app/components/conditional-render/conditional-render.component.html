@@ -1,0 +1,7 @@
+<div class="classe_aulas"> 
+    <div *ngIf="canShow"> Não estava sendo mostrado porque não era permitido</div>
+    <div *ngIf="canShow2"> Este aqui, por outro lado, esta sendo permitido </div>
+    <div *ngIf=" userName === 'Mol' "> O nome do usuário é {{userName}}</div>
+    <div *ngIf=" userName === 'Mol' ; else nomeNaoEncontrado"> Isso não vai aparecer a menos que o nome seja Mol</div>
+    <ng-template #nomeNaoEncontrado> Isso aparece APENAS se o nome não for "Mol"</ng-template>
+</div>

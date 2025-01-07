@@ -1,0 +1,13 @@
+<div class="classe_aulas">
+    List-Render
+    <p>Lista: </p>
+    <ul>
+        <li *ngFor = "let animal of animals"> 
+            <!-- Nome: {{animal.name}} - Tipo: {{animal.type}}  -->
+            Nome: <a routerLink="/list/{{animal.id}}"> {{animal.name}} </a> - Tipo: {{animal.type}} 
+            <button (click)="showAge(animal)">Show age</button>
+            <p *ngIf="selectedAnimal && selectedAnimal.name === animal.name"> ----> {{animal.age}} </p>
+            <button (click)="removeAnimal(animal)">Remover animal</button>
+        </li>
+    </ul> 
+</div>
