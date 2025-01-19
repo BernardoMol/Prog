@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Cambria;
+    box-sizing: border-box; /*Elementos de imput não ultrapassam a largura desejada*/
+    color: #444;
+}
+
+a{
+    text-decoration: none;
+    color: #444;
+    transition: .4s;
+
+}
+
+a:hover{
+    columns: #dec129;
+}
+
+
+
