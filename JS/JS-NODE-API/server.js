@@ -1,3 +1,4 @@
+//aula do vídeo: https://www.youtube.com/watch?v=PyrMT0GA3sE
 // instalado express
 import { PrismaClient } from '@prisma/client'
 import express from 'express'
@@ -35,18 +36,37 @@ app.post('/usuarios', async (req, res) => {
 })
 
 app.get('/usuarios', async (req, res) => {
-    //res.send('Ok, respondi')
-    //res.json(users)
-    console.log(req)
-    const users = await prisma.user.findMany()
+    let users = []
+
+    if(req.query){
+        users = await prisma.user.findMany({
+            where:{
+                name: req.query.name,
+                email: req.query.email,
+                age: req.query.age,
+
+            }
+        })
+    }
+    else{
+        users = await prisma.user.findMany()
+    }
+    
+    console.log(users)
     res.status(200).json(users) //200 = ok
-}) 
+})
+
+// app.get('/usuarios', async (req, res) => {
+//     console.log(req)
+//     const users = await prisma.user.findMany()
+//     res.status(200).json(users) //200 = ok
+// })
+
+
 // app.post('/usuarios') // imagino que esta linha pode ser deletada
 
 // Defino uma porta/servidor - No caso, a porta virtual 3000 do meu pc
 app.listen(3000) // http://localhost:3000/usuarios
-
-
 
 app.put('/usuarios/:variavelDeIdentificacao', async (req, res) => {
     await prisma.user.update({ // "await" requisição assincrona, nao tem como saber quanto tempo vai levar
@@ -105,6 +125,11 @@ app.delete('/usuarios/:id', async (req, res) => {
     senha banco: bernardobcmb
 */
 
-// para fazer a conexão com o mongo, usaremos a extensão prisma "npm install prisma "--save-dev"
+// para fazer a conexão com o mongo, usaremos a extensão prisma "npm install prisma" "--save-dev"
 // schema é a PADRONIZAÇÃO dos dados e do formato dos dados que serão enviados para o banco
 // comando para quando as configurações do banco estiverem certas tanto nos arquivos prisma quanto no banco em si: npx prisma db push
+
+// RODANDO: precisamos rodar o arquivo e a conexão com o banco
+// 1- node server.js
+// 2- npx prisma db push
+// 3 - node --watch server.js (serve para quando alterar o codiugo e salvar, o server reiniciar sozinho)
