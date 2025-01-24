@@ -129,6 +129,9 @@ app.delete('/usuarios/:id', async (req, res) => {
 // schema é a PADRONIZAÇÃO dos dados e do formato dos dados que serão enviados para o banco
 // comando para quando as configurações do banco estiverem certas tanto nos arquivos prisma quanto no banco em si: npx prisma db push
 
+
+//COMEÇANDO DO ZERO: npm init e nmp install express
+
 // RODANDO: precisamos rodar o arquivo e a conexão com o banco
 // 1- node server.js
 // 2- npx prisma db push
