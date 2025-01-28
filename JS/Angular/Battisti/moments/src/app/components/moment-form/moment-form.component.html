@@ -1,0 +1,24 @@
+<form (ngSubmit)="submit()" [formGroup]="momentForm" #formDir="ngForm">
+    <div class="form-group">
+        <label for="title">Título</label>
+        <input type="text" placeholder="Coloque um Título" formControlName="title" required/>
+    </div>
+    <div *ngIf="title.invalid && formDir.submitted" class="validation-error">
+        <p *ngIf="title.errors?.['required']">O título é obrigatório.</p>
+        <p *ngIf="title.errors?.['maxlength']">O título é grande demais.</p> <!-- Este erro nao foi implementado, mas é um bom exemplo -->
+    </div>
+    <div class="form-group">
+        <label for="description">Descrição</label>
+        <textarea placeholder="O que este momento foi para você?" formControlName="description" required></textarea>
+        <div *ngIf="description.invalid && formDir.submitted" class="validation-error">
+            <p *ngIf="description.errors?.['required']">A descrição do momento é obrigatório.</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="image">Insura a foto deste momento</label>
+        <input type="file" (change)="onFileSelected($event)"/>
+    </div>
+    <!-- Cada componenete onde o formulario será usado definira o texto do botão. -->
+    <input type="submit" value="{{ btnText }}"/>
+    <!-- O botão só aparecerá quando o texto for inserido (verificar componente newmoment....> ts e html). -->  
+</form>
