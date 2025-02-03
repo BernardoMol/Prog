@@ -1,2 +1,3 @@
-Ambiente2/
+Ambiente2
 comandos.txt
+
