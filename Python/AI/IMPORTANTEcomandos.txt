@@ -1,0 +1,6 @@
+
+python -m venv nomedoambiente (para criar o ambiente virtual)
+
+touch .gitignore (para criar o arquivo ".gitignore" pelo bash --> tentei criar na mao o txt mas ele ignorou...estranho...aí tive q usar o comando mesmo)
+
+echo "NomeDaPasta/" >> .gitignore (adiciona o que tem que ser ignorado no .ignore --> Como ele so funcionou com comando, é bom deixar esse comando aqui tb)
