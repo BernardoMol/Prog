@@ -1,0 +1,15 @@
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\jogoAdivinhacao\jogoAdivinhacao\bin\Debug\net8.0\jogoAdivinhacao.exe
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\jogoAdivinhacao\jogoAdivinhacao\bin\Debug\net8.0\jogoAdivinhacao.deps.json
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\jogoAdivinhacao\jogoAdivinhacao\bin\Debug\net8.0\jogoAdivinhacao.runtimeconfig.json
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\jogoAdivinhacao\jogoAdivinhacao\bin\Debug\net8.0\jogoAdivinhacao.dll
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\jogoAdivinhacao\jogoAdivinhacao\bin\Debug\net8.0\jogoAdivinhacao.pdb
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\jogoAdivinhacao\jogoAdivinhacao\obj\Debug\net8.0\jogoAdivinhacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\jogoAdivinhacao\jogoAdivinhacao\obj\Debug\net8.0\jogoAdivinhacao.AssemblyInfoInputs.cache
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\jogoAdivinhacao\jogoAdivinhacao\obj\Debug\net8.0\jogoAdivinhacao.AssemblyInfo.cs
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\jogoAdivinhacao\jogoAdivinhacao\obj\Debug\net8.0\jogoAdivinhacao.csproj.CoreCompileInputs.cache
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\jogoAdivinhacao\jogoAdivinhacao\obj\Debug\net8.0\jogoAdivinhacao.sourcelink.json
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\jogoAdivinhacao\jogoAdivinhacao\obj\Debug\net8.0\jogoAdivinhacao.dll
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\jogoAdivinhacao\jogoAdivinhacao\obj\Debug\net8.0\refint\jogoAdivinhacao.dll
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\jogoAdivinhacao\jogoAdivinhacao\obj\Debug\net8.0\jogoAdivinhacao.pdb
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\jogoAdivinhacao\jogoAdivinhacao\obj\Debug\net8.0\jogoAdivinhacao.genruntimeconfig.cache
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\jogoAdivinhacao\jogoAdivinhacao\obj\Debug\net8.0\ref\jogoAdivinhacao.dll

@@ -1,0 +1,19 @@
+cria a solução
+dotnet new sln -n MinhaSolucao
+
+cria o projeto de testes com o xunit
+dotnet new xunit
+
+adiciona o projeto ao arquivo de solução
+dotnet sln MinhaSolucao.sln add MeuProjetoDeTestes.csproj
+
+
+
+
+
+O que é uma Solução (.sln) no .NET?
+Uma solução (.sln) no .NET é um arquivo que organiza e gerencia múltiplos projetos dentro de um mesmo ambiente de desenvolvimento.
+Ela é útil quando você tem vários projetos que precisam trabalhar juntos, como:
+Um projeto principal (Exemplo: um sistema web ou biblioteca).
+Um projeto de testes (Como um conjunto de testes automatizados com xUnit).
+Se você não criar uma solução, os projetos ainda podem existir separadamente, mas ao usar uma solução, tudo fica mais organizado e fácil de gerenciar no Visual Studio e VS Code.

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\jogoAdivinhacao\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AED72783-8F33-4715-92FA-62CE666DF97A}|jogoAdivinhacao\\jogoAdivinhacao.csproj|c:\\users\\mol\\documents\\github\\prog\\alura\\jogoadivinhacao\\jogoadivinhacao\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AED72783-8F33-4715-92FA-62CE666DF97A}|jogoAdivinhacao\\jogoAdivinhacao.csproj|solutionrelative:jogoadivinhacao\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\jogoAdivinhacao\\jogoAdivinhacao\\Program.cs",
+              "RelativeDocumentMoniker": "jogoAdivinhacao\\Program.cs",
+              "ToolTip": "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\jogoAdivinhacao\\jogoAdivinhacao\\Program.cs",
+              "RelativeToolTip": "jogoAdivinhacao\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwCAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T13:45:10.864Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

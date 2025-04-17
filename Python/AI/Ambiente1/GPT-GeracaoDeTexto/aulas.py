@@ -1,3 +1,6 @@
+# Explorando a API da OpenAI
+
+
 # Para conectar com a API da openAI
 import openai
 from dotenv import load_dotenv, find_dotenv

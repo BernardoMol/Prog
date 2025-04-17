@@ -1,0 +1,11 @@
+﻿@using ScreenSound.Web.Layout
+<Router AppAssembly="@typeof(App).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(ScreenSound.Web.Layout.MainLayout)" />
+    </Found>
+    <NotFound>
+        <LayoutView Layout="@typeof(ScreenSound.Web.Layout.MainLayout)">
+            <p>Desculpe, nada foi encontrado.</p>
+        </LayoutView>
+    </NotFound>
+</Router>

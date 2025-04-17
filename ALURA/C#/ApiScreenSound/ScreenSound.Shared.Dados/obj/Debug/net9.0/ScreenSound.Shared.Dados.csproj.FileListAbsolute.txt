@@ -1,0 +1,16 @@
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ApiScreenSound\ScreenSound.Shared.Dados\obj\Debug\net9.0\ScreenSound.Shared.Dados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ApiScreenSound\ScreenSound.Shared.Dados\obj\Debug\net9.0\ScreenSound.Shared.Dados.AssemblyInfoInputs.cache
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ApiScreenSound\ScreenSound.Shared.Dados\obj\Debug\net9.0\ScreenSound.Shared.Dados.AssemblyInfo.cs
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ApiScreenSound\ScreenSound.Shared.Dados\obj\Debug\net9.0\ScreenSound.Shared.Dados.csproj.CoreCompileInputs.cache
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ApiScreenSound\ScreenSound.Shared.Dados\obj\Debug\net9.0\ScreenSound.Shared.Dados.sourcelink.json
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ApiScreenSound\ScreenSound.Shared.Dados\obj\Debug\net9.0\ScreenSound.Shared.Dados.csproj.AssemblyReference.cache
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ApiScreenSound\ScreenSound.Shared.Dados\bin\Debug\net9.0\ScreenSound.Shared.Dados.deps.json
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ApiScreenSound\ScreenSound.Shared.Dados\bin\Debug\net9.0\ScreenSound.Shared.Dados.dll
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ApiScreenSound\ScreenSound.Shared.Dados\bin\Debug\net9.0\ScreenSound.Shared.Dados.pdb
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ApiScreenSound\ScreenSound.Shared.Dados\bin\Debug\net9.0\ScreenSound.Shared.Modelos.dll
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ApiScreenSound\ScreenSound.Shared.Dados\bin\Debug\net9.0\ScreenSound.Shared.Modelos.pdb
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ApiScreenSound\ScreenSound.Shared.Dados\obj\Debug\net9.0\ScreenSo.6D9A23D4.Up2Date
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ApiScreenSound\ScreenSound.Shared.Dados\obj\Debug\net9.0\ScreenSound.Shared.Dados.dll
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ApiScreenSound\ScreenSound.Shared.Dados\obj\Debug\net9.0\refint\ScreenSound.Shared.Dados.dll
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ApiScreenSound\ScreenSound.Shared.Dados\obj\Debug\net9.0\ScreenSound.Shared.Dados.pdb
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ApiScreenSound\ScreenSound.Shared.Dados\obj\Debug\net9.0\ref\ScreenSound.Shared.Dados.dll

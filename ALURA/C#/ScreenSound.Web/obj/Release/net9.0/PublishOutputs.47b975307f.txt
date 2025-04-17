@@ -1,0 +1,10 @@
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ScreenSound.Web\publish\publish\web.config
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ScreenSound.Web\publish\publish\publish\ScreenSound.Web.staticwebassets.endpoints.json
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ScreenSound.Web\publish\publish\publish\wwwroot\appsettings.json
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ScreenSound.Web\publish\publish\publish\wwwroot\sample-data\weather.json
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ScreenSound.Web\publish\publish\publish\wwwroot\_framework\blazor.boot.json
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ScreenSound.Web\publish\publish\ScreenSound.Web.staticwebassets.endpoints.json
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ScreenSound.Web\publish\publish\wwwroot\appsettings.json
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ScreenSound.Web\publish\publish\wwwroot\sample-data\weather.json
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ScreenSound.Web\publish\publish\wwwroot\_framework\blazor.boot.json
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\ScreenSound.Web\publish\web.config

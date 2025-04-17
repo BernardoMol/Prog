@@ -1,0 +1,15 @@
+﻿@page "/logout"
+@inject AuthAPI AuthAPI
+@using Microsoft.AspNetCore.Components.Authorization
+@attribute [AllowAnonymous]
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        if(await AuthAPI.VerificaAutenticado())
+        {
+            await AuthAPI.LogoutAsync();
+        }
+        await base.OnInitializedAsync();
+    }
+}

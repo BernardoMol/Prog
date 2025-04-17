@@ -1,0 +1,35 @@
+{
+  "nome": "GI",
+  "musicasDaLista": [
+    {
+      "song": "#SELFIE - Original Mix",
+      "artist": "The Chainsmokers",
+      "duration_ms": 183750,
+      "genre": "pop, Dance/Electronic"
+    },
+    {
+      "song": "1973",
+      "artist": "James Blunt",
+      "duration_ms": 280026,
+      "genre": "pop"
+    },
+    {
+      "song": "3 Nights",
+      "artist": "Dominic Fike",
+      "duration_ms": 177666,
+      "genre": "rock, pop"
+    },
+    {
+      "song": "A Moment Like This",
+      "artist": "Leona Lewis",
+      "duration_ms": 257293,
+      "genre": "pop, R\u0026B"
+    },
+    {
+      "song": "...Ready For It?",
+      "artist": "Taylor Swift",
+      "duration_ms": 208186,
+      "genre": "pop"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+﻿@page "/login"
+@inject AuthAPI AuthAPI
+@using Microsoft.AspNetCore.Components.Authorization
+@inject NavigationManager Navigation
+@attribute [AllowAnonymous]
+
+<AuthorizeView>
+    <Authorized>
+        <p>Você está conectado como @context.User.Identity.Name </p>
+    </Authorized>
+    <NotAuthorized>
+        <MudForm>
+            <MudTextField T="string" Label="Email" @bind-Value="email"
+                        Variant="Variant.Outlined" Class="my-4"
+                        Required="true" RequiredError="Email obrigatório!" />
+            <MudTextField T="string" Label="Senha" @bind-Value="senha"
+                        InputType="InputType.Password"
+                        Variant="Variant.Outlined" Class="my-4"
+                        Required="true" RequiredError="Senha obrigatória!" />
+            <MudButton Variant="Variant.Filled" Color="Color.Primary"
+                    Class="my-6" @onclick="FazerLogin">
+                Login
+            </MudButton>
+        </MudForm>
+    </NotAuthorized> 
+</AuthorizeView>
+
+@code {
+    private string? email;
+    private string? senha;
+    [SupplyParameterFromQuery]
+    public string? ReturnUrl { get; set; }
+    private async Task FazerLogin()
+    {
+        var resposta = await AuthAPI.LoginAsync(email, senha);
+        if(resposta.Sucesso){
+            if(ReturnUrl is not null){
+                Navigation.NavigateTo(ReturnUrl);
+            }
+        }
+    }
+
+}

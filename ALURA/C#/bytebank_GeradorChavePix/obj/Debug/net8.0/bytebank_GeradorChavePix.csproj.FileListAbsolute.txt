@@ -1,0 +1,12 @@
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\bytebank_GeradorChavePix\bin\Debug\net8.0\bytebank_GeradorChavePix.deps.json
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\bytebank_GeradorChavePix\bin\Debug\net8.0\bytebank_GeradorChavePix.dll
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\bytebank_GeradorChavePix\bin\Debug\net8.0\bytebank_GeradorChavePix.pdb
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\bytebank_GeradorChavePix\obj\Debug\net8.0\bytebank_GeradorChavePix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\bytebank_GeradorChavePix\obj\Debug\net8.0\bytebank_GeradorChavePix.AssemblyInfoInputs.cache
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\bytebank_GeradorChavePix\obj\Debug\net8.0\bytebank_GeradorChavePix.AssemblyInfo.cs
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\bytebank_GeradorChavePix\obj\Debug\net8.0\bytebank_GeradorChavePix.csproj.CoreCompileInputs.cache
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\bytebank_GeradorChavePix\obj\Debug\net8.0\bytebank_GeradorChavePix.sourcelink.json
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\bytebank_GeradorChavePix\obj\Debug\net8.0\bytebank_GeradorChavePix.dll
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\bytebank_GeradorChavePix\obj\Debug\net8.0\refint\bytebank_GeradorChavePix.dll
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\bytebank_GeradorChavePix\obj\Debug\net8.0\bytebank_GeradorChavePix.pdb
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\bytebank_GeradorChavePix\obj\Debug\net8.0\ref\bytebank_GeradorChavePix.dll

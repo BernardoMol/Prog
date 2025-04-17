@@ -1,1 +1,8 @@
-{}
+{
+    "dotnet.defaultSolution": "ALURA/C#/PrimeiroProjeto/PrimeiroProjeto.sln"
+
+    {
+        "dotnet.server.useOmnisharp": true
+    }
+    
+}

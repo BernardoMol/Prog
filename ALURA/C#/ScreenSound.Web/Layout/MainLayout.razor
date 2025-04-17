@@ -1,0 +1,43 @@
+﻿@inherits LayoutComponentBase
+@using Microsoft.AspNetCore.Components.Authorization
+@using MudBlazor
+
+<MudThemeProvider Theme="@_currentTheme" />
+<MudDialogProvider />
+<MudSnackbarProvider />
+<MudPopoverProvider />
+
+<MudLayout>
+    <MudAppBar Elevation="2">
+        <MudImage Src="images/screensound-logo.png" Height="40" Class="ml-2" />
+        <MudSpacer/>
+        <AuthorizeView>
+            <Authorized>
+                <MudAvatar Color="Color.Default">
+                        <MudIcon Icon="@Icons.Material.Filled.Person"></MudIcon>
+                </MudAvatar>
+                <MudButton Class="ml-4" Href="logout" 
+                Variant="Variant.Outlined" 
+                Color="Color.Default">Logout</MudButton>
+            </Authorized>
+            <NotAuthorized>
+                <MudButton Class="ml-4" Href="login" 
+                Variant="Variant.Outlined" 
+                Color="Color.Default">Login</MudButton>
+            </NotAuthorized>
+        </AuthorizeView>
+    </MudAppBar>
+
+    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
+        <NavMenu />
+    </MudDrawer>
+
+    <MudMainContent>
+        @Body
+    </MudMainContent>
+</MudLayout>
+
+@code {
+    private bool _drawerOpen = true;
+    private MudTheme _currentTheme = new MudTheme();
+}
