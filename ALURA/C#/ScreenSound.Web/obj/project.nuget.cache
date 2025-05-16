@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "d+ncXibpR3Y=",
+  "dgSpecHash": "JbYpJ+/WA1w=",
   "success": true,
   "projectFilePath": "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\ScreenSound.Web\\ScreenSound.Web.csproj",
   "expectedPackageFiles": [
@@ -38,12 +38,12 @@
     "C:\\Users\\Mol\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.1\\microsoft.extensions.primitives.9.0.1.nupkg.sha512",
     "C:\\Users\\Mol\\.nuget\\packages\\microsoft.jsinterop\\9.0.1\\microsoft.jsinterop.9.0.1.nupkg.sha512",
     "C:\\Users\\Mol\\.nuget\\packages\\microsoft.jsinterop.webassembly\\9.0.1\\microsoft.jsinterop.webassembly.9.0.1.nupkg.sha512",
-    "C:\\Users\\Mol\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.1\\microsoft.net.illink.tasks.9.0.1.nupkg.sha512",
-    "C:\\Users\\Mol\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\9.0.1\\microsoft.net.sdk.webassembly.pack.9.0.1.nupkg.sha512",
+    "C:\\Users\\Mol\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.4\\microsoft.net.illink.tasks.9.0.4.nupkg.sha512",
+    "C:\\Users\\Mol\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\9.0.4\\microsoft.net.sdk.webassembly.pack.9.0.4.nupkg.sha512",
     "C:\\Users\\Mol\\.nuget\\packages\\mudblazor\\8.5.1\\mudblazor.8.5.1.nupkg.sha512",
     "C:\\Users\\Mol\\.nuget\\packages\\system.net.http.json\\9.0.4\\system.net.http.json.9.0.4.nupkg.sha512",
     "C:\\Users\\Mol\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
-    "C:\\Users\\Mol\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\9.0.1\\microsoft.netcore.app.runtime.mono.browser-wasm.9.0.1.nupkg.sha512"
+    "C:\\Users\\Mol\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\9.0.4\\microsoft.netcore.app.runtime.mono.browser-wasm.9.0.4.nupkg.sha512"
   ],
   "logs": []
 }

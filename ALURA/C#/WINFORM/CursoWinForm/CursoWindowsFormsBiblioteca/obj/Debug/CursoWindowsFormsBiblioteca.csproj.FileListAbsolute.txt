@@ -1,0 +1,9 @@
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWindowsFormsBiblioteca\bin\Debug\CursoWindowsFormsBiblioteca.dll
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWindowsFormsBiblioteca\bin\Debug\CursoWindowsFormsBiblioteca.pdb
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.csproj.AssemblyReference.cache
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.dll
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.pdb
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWindowsFormsBiblioteca\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWindowsFormsBiblioteca\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWindowsFormsBiblioteca\obj\Debug\CursoWin.DDC1B638.Up2Date

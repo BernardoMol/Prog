@@ -1,0 +1,16 @@
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\bin\Release\CursoWinForm.exe.config
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\bin\Release\CursoWinForm.exe
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\bin\Release\CursoWinForm.pdb
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\obj\Release\CursoWinForm.csproj.AssemblyReference.cache
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\obj\Release\CursoWinForm.Frm_DemkonstracaoKey.resources
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\obj\Release\CursoWinForm.Frm_HelloWorld.resources
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\obj\Release\CursoWindowsForms.Frm_Mascara.resources
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\obj\Release\CursoWindowsForms.Frm_Principal.resources
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\obj\Release\CursoWindowsForms.Frm_ValidaCPF.resources
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\obj\Release\CursoWinForm.Frm_ValidaCPF2.resources
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\obj\Release\CursoWinForm.Frm_ValidaSenha.resources
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\obj\Release\CursoWinForm.Properties.Resources.resources
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\obj\Release\CursoWinForm.csproj.GenerateResource.cache
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\obj\Release\CursoWinForm.csproj.CoreCompileInputs.cache
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\obj\Release\CursoWinForm.exe
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\obj\Release\CursoWinForm.pdb
