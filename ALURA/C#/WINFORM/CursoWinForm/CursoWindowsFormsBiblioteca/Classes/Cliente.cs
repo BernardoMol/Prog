@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations; // é esta DLL que me deixa fazer as imposições nas variaveis
+using CursoWindowsFormsBiblioteca.Database;
 
 namespace CursoWindowsFormsBiblioteca.Classes
 {
@@ -118,7 +119,196 @@ namespace CursoWindowsFormsBiblioteca.Classes
                 }
 
             }
-        
+
+
+
+            #region "Crud do Fichário DB"
+
+            public void IncluirFicharioDB(string conexao)
+            {
+
+                string clienteJSON = Cls_Uteis.SerializeObject(this);
+
+                FicharioDB F = new FicharioDB(conexao);
+                if (F.status)
+                {
+                    F.Incluir(this.Id, clienteJSON);
+                    if (!(F.status))
+                    {
+                        throw new Exception(F.mensagem);
+                    }
+                }
+                else
+                {
+                    throw new Exception(F.mensagem);
+                }
+            }
+
+            public Unit BuscarFicharioDB(string id, string conexao)
+            {
+
+                FicharioDB F = new FicharioDB(conexao);
+                // FAÇO a BUSCA
+                string clienteJson = F.Buscar(id);
+                // Verifico se a BUSCA deu certo
+                if (F.status == true)
+                {
+                    return Cls_Uteis.DesSerializedClassUnit<Cliente.Unit>(clienteJson);
+                }
+                else
+                {
+                    throw new Exception(F.mensagem);
+                }
+            }
+
+            public void AlterarFicharioDB(string conexao)
+            {
+                string clienteJson = Cls_Uteis.SerializeObject(this);
+                    FicharioDB F = new FicharioDB(conexao);
+                // Verifico se a BUSCA deu certo
+                if (F.status == true)
+                {
+                    F.Alterar(this.Id, clienteJson);
+                    if (!(F.status))
+                    {
+                        throw new Exception(F.mensagem);
+                    }
+                }
+                else
+                {
+                    throw new Exception(F.mensagem);
+                }
+            }
+
+            public void ApagarFicharioDB(string conexao)
+            {
+                //Verifico conexão
+                FicharioDB F = new FicharioDB(conexao);
+                if (F.status == true)
+                {
+                    F.Apagar(this.Id);
+                    // Verifico se apagou
+                    if (!(F.status == true))
+                    {
+                        throw new Exception(F.mensagem);
+                    }
+                }
+                else
+                {
+                    throw new Exception(F.mensagem);
+                }
+            }
+
+            public List<string> ListaFicharioDB(string conexao)
+            {
+                //Verifico conexão
+                FicharioDB F = new FicharioDB(conexao);
+                if (F.status == true)
+                {
+                    List<string> todosJson = F.BuscarTodos();
+                    return todosJson;
+                }
+                else
+                {
+                    throw new Exception(F.mensagem);
+                }
+            }
+            #endregion
+
+
+            #region "Crud do Fichário"
+
+            public void IncluirFichario(string conexao)
+            {
+
+                string clienteJSON = Cls_Uteis.SerializeObject(this);
+
+                Fichario F = new Fichario(conexao);
+                if (F.status)
+                {
+                    F.Incluir(this.Id, clienteJSON);
+                    if (! (F.status) )
+                    {
+                        throw new Exception(F.mensagem);
+                    }
+                }
+                else
+                {
+                    throw new Exception(F.mensagem);
+                }
+            }
+            
+            public Unit BuscarFichario(string id,string conexao)
+            {
+
+                Fichario F = new Fichario(conexao);
+                // FAÇO a BUSCA
+                string clienteJson = F.Buscar(id);
+                // Verifico se a BUSCA deu certo
+                if (F.status == true)
+                {
+                    return Cls_Uteis.DesSerializedClassUnit<Cliente.Unit> (clienteJson);
+                }
+                else
+                {
+                    throw new Exception(F.mensagem);
+                }
+            }
+
+            public void AlterarFichario(string conexao)
+            {
+                string clienteJson = Cls_Uteis.SerializeObject(this);
+                Fichario F = new Fichario(conexao);
+                // Verifico se a BUSCA deu certo
+                if (F.status == true)
+                {
+                    F.Alterar(this.Id, clienteJson);   
+                    if(! (F.status))
+                    {
+                        throw new Exception(F.mensagem);
+                    }
+                }
+                else
+                {
+                    throw new Exception(F.mensagem);
+                }
+            }
+
+            public void ApagarFichario(string conexao)
+            {
+                //Verifico conexão
+                Fichario F = new Fichario(conexao);
+                if (F.status == true)
+                {
+                    F.Apagar(this.Id);
+                    // Verifico se apagou
+                    if ( ! (F.status == true ) )
+                    {
+                        throw new Exception(F.mensagem);
+                    }
+                }
+                else
+                {
+                    throw new Exception(F.mensagem);
+                }                
+            }
+
+            public List<string> ListaFichario(string conexao) 
+            {
+                //Verifico conexão
+                Fichario F = new Fichario(conexao);
+                if (F.status == true)
+                {
+                    List<string> todosJson = F.BuscarTodos();
+                    return todosJson;
+                }
+                else
+                {
+                    throw new Exception(F.mensagem);
+                }
+            }
+            #endregion
+
         }
         public class List 
         {

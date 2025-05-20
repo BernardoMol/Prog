@@ -51,6 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FicharioDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FicharioDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Formulários Curso 1\Frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +128,12 @@
     <Compile Include="Formulários Curso 3\Frm_CadastroCliente_UC.designer.cs">
       <DependentUpon>Frm_CadastroCliente_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Busca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Busca.Designer.cs">
+      <DependentUpon>Frm_Busca.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_MenuFlutuante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,10 +200,10 @@
     <Compile Include="Frm_Principal_Menu_UC.Designer.cs">
       <DependentUpon>Frm_Principal_Menu_UC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Questao.cs">
+    <Compile Include="Formulários Curso 2\Frm_Questao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Questao.Designer.cs">
+    <Compile Include="Formulários Curso 2\Frm_Questao.Designer.cs">
       <DependentUpon>Frm_Questao.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -233,6 +244,9 @@
     <EmbeddedResource Include="Formulários Curso 3\Frm_CadastroCliente_UC.resx">
       <DependentUpon>Frm_CadastroCliente_UC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Busca.resx">
+      <DependentUpon>Frm_Busca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_MenuFlutuante.resx">
       <DependentUpon>Frm_MenuFlutuante.cs</DependentUpon>
     </EmbeddedResource>
@@ -266,7 +280,7 @@
     <EmbeddedResource Include="Frm_Principal_Menu_UC.resx">
       <DependentUpon>Frm_Principal_Menu_UC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Questao.resx">
+    <EmbeddedResource Include="Formulários Curso 2\Frm_Questao.resx">
       <DependentUpon>Frm_Questao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -279,6 +293,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="FicharioDataSet.xsc">
+      <DependentUpon>FicharioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FicharioDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FicharioDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FicharioDataSet.xss">
+      <DependentUpon>FicharioDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Imagens\Icones_Imagens.zip" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -340,7 +365,6 @@
     <None Include="Resources\Frm_DemonstracaoKey.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Formulários Curso 2\" />
     <Folder Include="Formulários Curso 4\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

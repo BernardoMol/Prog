@@ -66,12 +66,14 @@
             this.Txt_Cidade = new System.Windows.Forms.TextBox();
             this.Grp_Outros = new System.Windows.Forms.GroupBox();
             this.Tls_Principal = new System.Windows.Forms.ToolStrip();
-            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.novoToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.abrirToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.salvarToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.ApagatoolStripButton = new System.Windows.Forms.ToolStripButton();
             this.LimpartoolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.Btn_Busca = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.Grp_Codigo.SuspendLayout();
             this.Grp_DadosPessoais.SuspendLayout();
             this.Grp_Genero.SuspendLayout();
@@ -287,16 +289,18 @@
             // 
             // Grp_Codigo
             // 
+            this.Grp_Codigo.Controls.Add(this.Btn_Busca);
             this.Grp_Codigo.Controls.Add(this.Txt_Codigo);
             this.Grp_Codigo.Location = new System.Drawing.Point(12, 48);
             this.Grp_Codigo.Name = "Grp_Codigo";
-            this.Grp_Codigo.Size = new System.Drawing.Size(227, 53);
+            this.Grp_Codigo.Size = new System.Drawing.Size(304, 53);
             this.Grp_Codigo.TabIndex = 52;
             this.Grp_Codigo.TabStop = false;
             this.Grp_Codigo.Text = "groupBox1";
             // 
             // Grp_DadosPessoais
             // 
+            this.Grp_DadosPessoais.Controls.Add(this.button2);
             this.Grp_DadosPessoais.Controls.Add(this.Chk_TemPai);
             this.Grp_DadosPessoais.Controls.Add(this.Grp_Genero);
             this.Grp_DadosPessoais.Controls.Add(this.Txt_NomeCliente);
@@ -443,14 +447,6 @@
             this.Tls_Principal.TabIndex = 56;
             this.Tls_Principal.Text = "toolStrip1";
             // 
-            // toolStrip2
-            // 
-            this.toolStrip2.Location = new System.Drawing.Point(0, 25);
-            this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(795, 25);
-            this.toolStrip2.TabIndex = 57;
-            this.toolStrip2.Text = "toolStrip2";
-            // 
             // novoToolStripButton
             // 
             this.novoToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -502,6 +498,33 @@
             this.LimpartoolStripButton.Text = "toolStripButton2";
             this.LimpartoolStripButton.ToolTipText = "Limpar";
             this.LimpartoolStripButton.Click += new System.EventHandler(this.LimpartoolStripButton_Click);
+            // 
+            // toolStrip2
+            // 
+            this.toolStrip2.Location = new System.Drawing.Point(0, 25);
+            this.toolStrip2.Name = "toolStrip2";
+            this.toolStrip2.Size = new System.Drawing.Size(795, 25);
+            this.toolStrip2.TabIndex = 57;
+            this.toolStrip2.Text = "toolStrip2";
+            // 
+            // Btn_Busca
+            // 
+            this.Btn_Busca.Location = new System.Drawing.Point(221, 17);
+            this.Btn_Busca.Name = "Btn_Busca";
+            this.Btn_Busca.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Busca.TabIndex = 58;
+            this.Btn_Busca.Text = "button1";
+            this.Btn_Busca.UseVisualStyleBackColor = true;
+            this.Btn_Busca.Click += new System.EventHandler(this.Btn_Busca_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(356, 16);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 51;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Frm_CadastroCliente_UC
             // 
@@ -577,5 +600,7 @@
         private System.Windows.Forms.ToolStrip toolStrip2;
         private System.Windows.Forms.ToolStripButton ApagatoolStripButton;
         private System.Windows.Forms.ToolStripButton LimpartoolStripButton;
+        private System.Windows.Forms.Button Btn_Busca;
+        private System.Windows.Forms.Button button2;
     }
 }

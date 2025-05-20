@@ -161,10 +161,19 @@ namespace CursoWindowsFormsBiblioteca
             return sb.ToString();
         }
 
+        // JSON para classe
         public static T DesSerializedClassUnit<T>(string vJson) where T : class
         {
             return JsonConvert.DeserializeObject<T>(vJson);
         }
+
+        // Classe para JSON
+        public static string SerializeObject<T>(T obj) where T : class
+        {
+            return JsonConvert.SerializeObject(obj);
+        }
+
+
 
     }
 }

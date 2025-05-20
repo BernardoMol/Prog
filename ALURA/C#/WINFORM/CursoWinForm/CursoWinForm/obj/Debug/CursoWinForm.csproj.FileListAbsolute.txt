@@ -36,3 +36,7 @@ C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\ob
 C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\obj\Debug\CursoWindowsForms.Frm_CadastroCliente_UC.resources
 C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\obj\Debug\CursoWindowsForms.Frm_Busca.resources
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\bin\Debug\Database\Fichario.mdf
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\bin\Debug\Database\Fichario_log.ldf
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\bin\Debug\CursoWindowsFormsBiblioteca.dll.config
