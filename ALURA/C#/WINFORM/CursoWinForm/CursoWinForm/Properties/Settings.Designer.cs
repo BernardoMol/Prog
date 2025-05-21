@@ -34,5 +34,16 @@ namespace CursoWinForm.Properties {
                 return ((string)(this["FicharioConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-TORSD92;Initial Catalog=ByteBank;User ID=sa;Password=curso;Tr" +
+            "ustServerCertificate=True")]
+        public string ByteBankConnectionString {
+            get {
+                return ((string)(this["ByteBankConnectionString"]));
+            }
+        }
     }
 }

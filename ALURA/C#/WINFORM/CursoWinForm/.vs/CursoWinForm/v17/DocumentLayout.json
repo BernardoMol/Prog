@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E457A39E-EB7A-4BDF-B67D-64B85E7E8BB2}|CursoWinForm\\CursoWinForm.csproj|C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\cursowinform\\formul\u00E1rios curso 3\\frm_cadastrocliente_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E457A39E-EB7A-4BDF-B67D-64B85E7E8BB2}|CursoWinForm\\CursoWinForm.csproj|c:\\users\\mol\\documents\\github\\prog\\alura\\c#\\winform\\cursowinform\\cursowinform\\formul\u00E1rios curso 3\\frm_cadastrocliente_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E457A39E-EB7A-4BDF-B67D-64B85E7E8BB2}|CursoWinForm\\CursoWinForm.csproj|solutionrelative:cursowinform\\formul\u00E1rios curso 3\\frm_cadastrocliente_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89D5C17F-6660-4254-922A-0151A00BD1E9}|CursoWindowsFormsBiblioteca\\CursoWindowsFormsBiblioteca.csproj|c:\\users\\mol\\documents\\github\\prog\\alura\\c#\\winform\\cursowinform\\cursowindowsformsbiblioteca\\classes\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89D5C17F-6660-4254-922A-0151A00BD1E9}|CursoWindowsFormsBiblioteca\\CursoWindowsFormsBiblioteca.csproj|solutionrelative:cursowindowsformsbiblioteca\\classes\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E457A39E-EB7A-4BDF-B67D-64B85E7E8BB2}|CursoWinForm\\CursoWinForm.csproj|c:\\users\\mol\\documents\\github\\prog\\alura\\c#\\winform\\cursowinform\\cursowinform\\formul\u00E1rios curso 3\\frm_cadastrocliente_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E457A39E-EB7A-4BDF-B67D-64B85E7E8BB2}|CursoWinForm\\CursoWinForm.csproj|solutionrelative:cursowinform\\formul\u00E1rios curso 3\\frm_cadastrocliente_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89D5C17F-6660-4254-922A-0151A00BD1E9}|CursoWindowsFormsBiblioteca\\CursoWindowsFormsBiblioteca.csproj|C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\cursowindowsformsbiblioteca\\database\\fichariodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89D5C17F-6660-4254-922A-0151A00BD1E9}|CursoWindowsFormsBiblioteca\\CursoWindowsFormsBiblioteca.csproj|solutionrelative:cursowindowsformsbiblioteca\\database\\fichariodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E457A39E-EB7A-4BDF-B67D-64B85E7E8BB2}|CursoWinForm\\CursoWinForm.csproj|c:\\users\\mol\\documents\\github\\prog\\alura\\c#\\winform\\cursowinform\\cursowinform\\frm_principal_menu_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E457A39E-EB7A-4BDF-B67D-64B85E7E8BB2}|CursoWinForm\\CursoWinForm.csproj|solutionrelative:cursowinform\\frm_principal_menu_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E457A39E-EB7A-4BDF-B67D-64B85E7E8BB2}|CursoWinForm\\CursoWinForm.csproj|c:\\users\\mol\\documents\\github\\prog\\alura\\c#\\winform\\cursowinform\\cursowinform\\frm_principal_menu_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E457A39E-EB7A-4BDF-B67D-64B85E7E8BB2}|CursoWinForm\\CursoWinForm.csproj|solutionrelative:cursowinform\\frm_principal_menu_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E457A39E-EB7A-4BDF-B67D-64B85E7E8BB2}|CursoWinForm\\CursoWinForm.csproj|c:\\users\\mol\\documents\\github\\prog\\alura\\c#\\winform\\cursowinform\\cursowinform\\frm_agencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E457A39E-EB7A-4BDF-B67D-64B85E7E8BB2}|CursoWinForm\\CursoWinForm.csproj|solutionrelative:cursowinform\\frm_agencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E457A39E-EB7A-4BDF-B67D-64B85E7E8BB2}|CursoWinForm\\CursoWinForm.csproj|c:\\users\\mol\\documents\\github\\prog\\alura\\c#\\winform\\cursowinform\\cursowinform\\frm_agencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E457A39E-EB7A-4BDF-B67D-64B85E7E8BB2}|CursoWinForm\\CursoWinForm.csproj|solutionrelative:cursowinform\\frm_agencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,21 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\CursoWindowsFormsBiblioteca\\Classes\\Cliente.cs",
-              "RelativeDocumentMoniker": "CursoWindowsFormsBiblioteca\\Classes\\Cliente.cs",
-              "ToolTip": "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\CursoWindowsFormsBiblioteca\\Classes\\Cliente.cs",
-              "RelativeToolTip": "CursoWindowsFormsBiblioteca\\Classes\\Cliente.cs",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAWwMAAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T02:25:41.259Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -45,23 +44,72 @@
               "RelativeDocumentMoniker": "CursoWinForm\\Formul\u00E1rios Curso 3\\Frm_CadastroCliente_UC.cs",
               "ToolTip": "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\CursoWinForm\\Formul\u00E1rios Curso 3\\Frm_CadastroCliente_UC.cs",
               "RelativeToolTip": "CursoWinForm\\Formul\u00E1rios Curso 3\\Frm_CadastroCliente_UC.cs",
-              "ViewState": "AgIAAMkAAAAAAAAAAAAYwBgBAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAJcCAAAAAAAAAAAiwMsCAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T02:17:48.72Z",
+              "WhenOpened": "2025-05-21T01:22:56.884Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FicharioDB.cs",
-              "DocumentMoniker": "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\CursoWindowsFormsBiblioteca\\Database\\FicharioDB.cs",
-              "RelativeDocumentMoniker": "CursoWindowsFormsBiblioteca\\Database\\FicharioDB.cs",
-              "ToolTip": "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\CursoWindowsFormsBiblioteca\\Database\\FicharioDB.cs",
-              "RelativeToolTip": "CursoWindowsFormsBiblioteca\\Database\\FicharioDB.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAWwJgAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Frm_CadastroCliente_UC.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\CursoWinForm\\Formul\u00E1rios Curso 3\\Frm_CadastroCliente_UC.cs",
+              "RelativeDocumentMoniker": "CursoWinForm\\Formul\u00E1rios Curso 3\\Frm_CadastroCliente_UC.cs",
+              "ToolTip": "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\CursoWinForm\\Formul\u00E1rios Curso 3\\Frm_CadastroCliente_UC.cs [Design]",
+              "RelativeToolTip": "CursoWinForm\\Formul\u00E1rios Curso 3\\Frm_CadastroCliente_UC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T02:25:07.362Z",
+              "WhenOpened": "2025-05-21T01:17:50.594Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Frm_Principal_Menu_UC.cs",
+              "DocumentMoniker": "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\CursoWinForm\\Frm_Principal_Menu_UC.cs",
+              "RelativeDocumentMoniker": "CursoWinForm\\Frm_Principal_Menu_UC.cs",
+              "ToolTip": "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\CursoWinForm\\Frm_Principal_Menu_UC.cs",
+              "RelativeToolTip": "CursoWinForm\\Frm_Principal_Menu_UC.cs",
+              "ViewState": "AgIAADQBAAAAAAAAAAAowEgBAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T01:15:10.974Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Frm_Principal_Menu_UC.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\CursoWinForm\\Frm_Principal_Menu_UC.cs",
+              "RelativeDocumentMoniker": "CursoWinForm\\Frm_Principal_Menu_UC.cs",
+              "ToolTip": "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\CursoWinForm\\Frm_Principal_Menu_UC.cs [Design]",
+              "RelativeToolTip": "CursoWinForm\\Frm_Principal_Menu_UC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T01:15:08.822Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Frm_Agencia.cs",
+              "DocumentMoniker": "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\CursoWinForm\\Frm_Agencia.cs",
+              "RelativeDocumentMoniker": "CursoWinForm\\Frm_Agencia.cs",
+              "ToolTip": "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\CursoWinForm\\Frm_Agencia.cs",
+              "RelativeToolTip": "CursoWinForm\\Frm_Agencia.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowBcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T01:06:02.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Frm_Agencia.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\CursoWinForm\\Frm_Agencia.cs",
+              "RelativeDocumentMoniker": "CursoWinForm\\Frm_Agencia.cs",
+              "ToolTip": "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\CursoWinForm\\Frm_Agencia.cs [Design]",
+              "RelativeToolTip": "CursoWinForm\\Frm_Agencia.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T01:05:47.643Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -80,7 +80,10 @@ namespace CursoWindowsForms
             Tls_Principal.Items[4].ToolTipText = "Limpar tela";
 
             Btn_Busca.Text = "Buscar";
-            
+            Grp_DataGrid.Text = "Clientes";
+            AtualizaGrid();
+
+
             LimparFormulario();
         }
 
@@ -129,8 +132,12 @@ namespace CursoWindowsForms
                 C.ValidaClasse();
                 C.ValidaComplemento();
                 //C.IncluirFichario("C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\Fichario");
-                C.IncluirFicharioDB("Cliente");
+                //C.IncluirFicharioDB("Cliente");
+                //C.IncluirFicharioSQL("Cliente");
+                C.IncluirFicharioSQLREL();
+
                 MessageBox.Show("OK! Cliente incluiodo com sucesso", "Bytebank", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                AtualizaGrid();
 
                 //string clienteJSON = Cls_Uteis.SerializeObject(C);
 
@@ -178,7 +185,9 @@ namespace CursoWindowsForms
                 {
                     Cliente.Unit C = new Cliente.Unit();
                     //C = C.BuscarFichario(Txt_Codigo.Text, "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\Fichario");
-                    C = C.BuscarFicharioDB(Txt_Codigo.Text, "Cliente");
+                    //C = C.BuscarFicharioDB(Txt_Codigo.Text, "Cliente");
+                    //C = C.BuscarFicharioSQL(Txt_Codigo.Text, "Cliente");
+                    C = C.BuscarFicharioSQLREL(Txt_Codigo.Text);
                     EscreveFormulario(C);
                 }
 
@@ -233,13 +242,18 @@ namespace CursoWindowsForms
                         C.ValidaClasse();
                         C.ValidaComplemento();
                         //C.AlterarFichario("C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\Fichario");
-                        C.AlterarFicharioDB("Cliente");
+                        //C.AlterarFicharioDB("Cliente");
+                        //C.AlterarFicharioSQL("Cliente");
+                        C.AlterarFicharioSQLREL();
                         MessageBox.Show("Cliente alterado com sucesso", "ByteBank", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        AtualizaGrid();
                     }
-                    catch
+                    catch (Exception sbrErrors)
                     {
+                        MessageBox.Show("ERRO AO ALTERAR "+ sbrErrors.Message, "ByteBank", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                     }
+                    
                     //try
                     //{
                     //    Cliente.Unit C = new Cliente.Unit();
@@ -290,7 +304,9 @@ namespace CursoWindowsForms
                 {
                     Cliente.Unit C = new Cliente.Unit();
                     //C = C.BuscarFichario(Txt_Codigo.Text, "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\Fichario");
-                    C = C.BuscarFicharioDB(Txt_Codigo.Text, "Cliente");
+                    //C = C.BuscarFicharioDB(Txt_Codigo.Text, "Cliente");
+                    //C = C.BuscarFicharioSQL(Txt_Codigo.Text, "Cliente");
+                    C = C.BuscarFicharioSQLREL(Txt_Codigo.Text);
 
                     EscreveFormulario(C);
 
@@ -299,9 +315,12 @@ namespace CursoWindowsForms
                     if (Db.DialogResult == DialogResult.Yes)
                     {
                         //C.ApagarFichario("C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\Fichario");
-                        C.ApagarFicharioDB("Cliente");
+                        //C.ApagarFicharioDB("Cliente");
+                        //C.ApagarFicharioSQL("Cliente");
+                        C.ApagarFicharioSQLREL();
                         LimparFormulario();
                         MessageBox.Show("Identificador apagado com sucesso ", "ByteBank", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        AtualizaGrid();
                     }
                 }
                 catch
@@ -535,7 +554,9 @@ namespace CursoWindowsForms
                 Cliente.Unit C = new Cliente.Unit();
                 List<string> list = new List<string>();
                 //list = C.ListaFichario("C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\Fichario");
-                list = C.ListaFicharioDB("Cliente");
+                //list = C.ListaFicharioDB("Cliente");
+                //list = C.ListaFicharioSQL("Cliente");
+                list = C.ListaFicharioSQLREL();
 
                 if (list == null)
                 {
@@ -544,10 +565,22 @@ namespace CursoWindowsForms
                 else
                 {
                     List<List<string>> ListaBusca = new List<List<string>>();
-                    for (int i = 0; i <= list.Count - 1; i++)
+                    //for (int i = 0; i <= list.Count - 1; i++)
+                    //{
+                    //C = Cls_Uteis.DesSerializedClassUnit<Cliente.Unit>(list[i]);
+                    //ListaBusca.Add(new List<string> { C.Id, C.Nome });
+                    //}
+                    //Frm_Busca F_form = new Frm_Busca(ListaBusca);
+
+                    foreach (string itemFormatado in list) // Itera sobre cada string na lista original
                     {
-                        C = Cls_Uteis.DesSerializedClassUnit<Cliente.Unit>(list[i]);
-                        ListaBusca.Add(new List<string> { C.Id, C.Nome });
+                        // Divide a string pelo separador " - "
+                        string[] partes = itemFormatado.Split(new string[] { " - " }, StringSplitOptions.None);
+
+                        string id = partes[0];   // A primeira parte é o Id
+                        string nome = partes[1]; // A segunda parte é o Nome
+
+                        ListaBusca.Add(new List<string> { id, nome });
                     }
 
 
@@ -557,7 +590,9 @@ namespace CursoWindowsForms
                     {
                         var idSelect = F_form.idSelect;
                         //C = C.BuscarFichario(idSelect, "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\Fichario");
-                        C = C.BuscarFicharioDB(idSelect, "Cliente");
+                        //C = C.BuscarFicharioDB(idSelect, "Cliente");
+                        //C = C.BuscarFicharioSQL(idSelect, "Cliente");
+                        C = C.BuscarFicharioSQLREL(idSelect);
 
                         if (C == null)
                         {
@@ -624,6 +659,76 @@ namespace CursoWindowsForms
                 MessageBox.Show(Ex.Message, "ERRO: ByteBank", MessageBoxButtons.OK);
             }
 
+        }
+
+        private void AtualizaGrid()
+        {
+            try
+            {
+                Cliente.Unit C = new Cliente.Unit();
+                List<string> list = new List<string>();
+                list = C.ListaFicharioSQLREL();
+
+                if (list == null)
+                {
+                    MessageBox.Show("Base Vazia", "ERRO: ByteBank", MessageBoxButtons.OK);
+                }
+             
+                List<List<string>> ListaBusca = new List<List<string>>();
+                Dg_Clientes.Rows.Clear();
+                foreach (string itemFormatado in list) // Itera sobre cada string na lista original
+                {
+
+                    string[] partes = itemFormatado.Split(new string[] { " - " }, StringSplitOptions.None);
+
+                    string id = partes[0];
+                    string nome = partes[1];
+
+                    ListaBusca.Add(new List<string> { id, nome });
+
+                    DataGridViewRow row = new DataGridViewRow();
+                    row.CreateCells(Dg_Clientes);
+                    row.Cells[0].Value = id;
+                    row.Cells[1].Value = nome;
+                    Dg_Clientes.Rows.Add(row);
+                }          
+
+
+            }
+            catch (Exception ex)  
+            {
+                MessageBox.Show(ex.Message, "ERRO: ByteBank", MessageBoxButtons.OK);
+            }
+            
+        }
+
+        private void Dg_Clientes_DoubleClick(object sender, EventArgs e)
+        {
+            try
+            {
+                DataGridViewRow row = new DataGridViewRow();
+                row = Dg_Clientes.SelectedRows[0];
+                string Id = row.Cells[0].Value.ToString();
+
+                try
+                {
+                    Cliente.Unit C = new Cliente.Unit();
+                    //C = C.BuscarFichario(Txt_Codigo.Text, "C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\Fichario");
+                    //C = C.BuscarFicharioDB(Txt_Codigo.Text, "Cliente");
+                    //C = C.BuscarFicharioSQL(Txt_Codigo.Text, "Cliente");
+                    C = C.BuscarFicharioSQLREL(Id);
+                    EscreveFormulario(C);
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "ERRO: ByteBank", MessageBoxButtons.OK);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERRO: ByteBank", MessageBoxButtons.OK);
+            }
         }
     }
 }

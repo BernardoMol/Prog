@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations; // é esta DLL que me deixa fazer as imposições nas variaveis
 using CursoWindowsFormsBiblioteca.Database;
+using System.Data;
 
 namespace CursoWindowsFormsBiblioteca.Classes
 {
@@ -13,9 +14,9 @@ namespace CursoWindowsFormsBiblioteca.Classes
     {
         public class Unit
         {
-            [Required (AllowEmptyStrings = false, ErrorMessage = "Código do Cliente é obrigatório") ]
-            [RegularExpression ("([0-9]+)", ErrorMessage = "Código deve ser numérico") ]
-            [StringLength (6, MinimumLength = 6, ErrorMessage = "Código precisa de 6 Numeros") ]
+            [Required(AllowEmptyStrings = false, ErrorMessage = "Código do Cliente é obrigatório")]
+            [RegularExpression("([0-9]+)", ErrorMessage = "Código deve ser numérico")]
+            [StringLength(6, MinimumLength = 6, ErrorMessage = "Código precisa de 6 Numeros")]
             public string Id { get; set; }
 
             [Required(AllowEmptyStrings = false, ErrorMessage = "Nome do Cliente é obrigatório")]
@@ -67,12 +68,12 @@ namespace CursoWindowsFormsBiblioteca.Classes
 
             [Required(AllowEmptyStrings = false, ErrorMessage = "Telefone é obrigatório")]
             [RegularExpression("([0-9]+)", ErrorMessage = "Telefone deve ser numérico")]
-            [StringLength(11, MinimumLength = 11,ErrorMessage = "Telefone Precisa ter 11 Dígitos")]
+            [StringLength(11, MinimumLength = 11, ErrorMessage = "Telefone Precisa ter 11 Dígitos")]
             public string Telefone { get; set; }
 
             [Required(AllowEmptyStrings = false, ErrorMessage = "Profissao é obrigatório")]
             [StringLength(100, ErrorMessage = "Profissao Máximo 100 caracteres")]
-            public string Profissao{ get; set; }
+            public string Profissao { get; set; }
 
             [Required(AllowEmptyStrings = false, ErrorMessage = "Renda é obrigatório")]
             [RegularExpression("([0-9]+)", ErrorMessage = "Renda deve ser numérico")]
@@ -99,11 +100,11 @@ namespace CursoWindowsFormsBiblioteca.Classes
 
             public void ValidaComplemento()
             {
-                if(this.NomePai == this.NomeMae)
+                if (this.NomePai == this.NomeMae)
                 {
                     throw new Exception("Nome do pai e da mãe não podem ser iguais");
                 }
-                
+
                 if (this.NaoTemPai == false)
                 {
                     if (this.NomePai == "")
@@ -112,14 +113,106 @@ namespace CursoWindowsFormsBiblioteca.Classes
                     }
                 }
                 bool validaCPF = Cls_Uteis.Valida(this.Cpf);
-               
-                if(validaCPF == false)
+
+                if (validaCPF == false)
                 {
                     throw new Exception("CPF Inválido");
                 }
 
             }
 
+            #region "Crud do Fichário SQL"
+
+            public void IncluirFicharioSQL(string conexao)
+            {
+
+                string clienteJSON = Cls_Uteis.SerializeObject(this);
+
+                FicharioSQLServer F = new FicharioSQLServer(conexao);
+                if (F.status)
+                {
+                    F.Incluir(this.Id, clienteJSON);
+                    if (!(F.status))
+                    {
+                        throw new Exception(F.mensagem);
+                    }
+                }
+                else
+                {
+                    throw new Exception(F.mensagem);
+                }
+            }
+
+            public Unit BuscarFicharioSQL(string id, string conexao)
+            {
+
+                FicharioSQLServer F = new FicharioSQLServer(conexao);
+                // FAÇO a BUSCA
+                string clienteJson = F.Buscar(id);
+                // Verifico se a BUSCA deu certo
+                if (F.status == true)
+                {
+                    return Cls_Uteis.DesSerializedClassUnit<Cliente.Unit>(clienteJson);
+                }
+                else
+                {
+                    throw new Exception(F.mensagem);
+                }
+            }
+
+            public void AlterarFicharioSQL(string conexao)
+            {
+                string clienteJson = Cls_Uteis.SerializeObject(this);
+                FicharioSQLServer F = new FicharioSQLServer(conexao);
+                // Verifico se a BUSCA deu certo
+                if (F.status == true)
+                {
+                    F.Alterar(this.Id, clienteJson);
+                    if (!(F.status))
+                    {
+                        throw new Exception(F.mensagem);
+                    }
+                }
+                else
+                {
+                    throw new Exception(F.mensagem);
+                }
+            }
+
+            public void ApagarFicharioSQL(string conexao)
+            {
+                //Verifico conexão
+                FicharioSQLServer F = new FicharioSQLServer(conexao);
+                if (F.status == true)
+                {
+                    F.Apagar(this.Id);
+                    // Verifico se apagou
+                    if (!(F.status == true))
+                    {
+                        throw new Exception(F.mensagem);
+                    }
+                }
+                else
+                {
+                    throw new Exception(F.mensagem);
+                }
+            }
+
+            public List<string> ListaFicharioSQL(string conexao)
+            {
+                //Verifico conexão
+                FicharioSQLServer F = new FicharioSQLServer(conexao);
+                if (F.status == true)
+                {
+                    List<string> todosJson = F.BuscarTodos();
+                    return todosJson;
+                }
+                else
+                {
+                    throw new Exception(F.mensagem);
+                }
+            }
+            #endregion
 
 
             #region "Crud do Fichário DB"
@@ -164,7 +257,7 @@ namespace CursoWindowsFormsBiblioteca.Classes
             public void AlterarFicharioDB(string conexao)
             {
                 string clienteJson = Cls_Uteis.SerializeObject(this);
-                    FicharioDB F = new FicharioDB(conexao);
+                FicharioDB F = new FicharioDB(conexao);
                 // Verifico se a BUSCA deu certo
                 if (F.status == true)
                 {
@@ -227,7 +320,7 @@ namespace CursoWindowsFormsBiblioteca.Classes
                 if (F.status)
                 {
                     F.Incluir(this.Id, clienteJSON);
-                    if (! (F.status) )
+                    if (!(F.status))
                     {
                         throw new Exception(F.mensagem);
                     }
@@ -237,8 +330,8 @@ namespace CursoWindowsFormsBiblioteca.Classes
                     throw new Exception(F.mensagem);
                 }
             }
-            
-            public Unit BuscarFichario(string id,string conexao)
+
+            public Unit BuscarFichario(string id, string conexao)
             {
 
                 Fichario F = new Fichario(conexao);
@@ -247,7 +340,7 @@ namespace CursoWindowsFormsBiblioteca.Classes
                 // Verifico se a BUSCA deu certo
                 if (F.status == true)
                 {
-                    return Cls_Uteis.DesSerializedClassUnit<Cliente.Unit> (clienteJson);
+                    return Cls_Uteis.DesSerializedClassUnit<Cliente.Unit>(clienteJson);
                 }
                 else
                 {
@@ -262,8 +355,8 @@ namespace CursoWindowsFormsBiblioteca.Classes
                 // Verifico se a BUSCA deu certo
                 if (F.status == true)
                 {
-                    F.Alterar(this.Id, clienteJson);   
-                    if(! (F.status))
+                    F.Alterar(this.Id, clienteJson);
+                    if (!(F.status))
                     {
                         throw new Exception(F.mensagem);
                     }
@@ -282,7 +375,7 @@ namespace CursoWindowsFormsBiblioteca.Classes
                 {
                     F.Apagar(this.Id);
                     // Verifico se apagou
-                    if ( ! (F.status == true ) )
+                    if (!(F.status == true))
                     {
                         throw new Exception(F.mensagem);
                     }
@@ -290,10 +383,10 @@ namespace CursoWindowsFormsBiblioteca.Classes
                 else
                 {
                     throw new Exception(F.mensagem);
-                }                
+                }
             }
 
-            public List<string> ListaFichario(string conexao) 
+            public List<string> ListaFichario(string conexao)
             {
                 //Verifico conexão
                 Fichario F = new Fichario(conexao);
@@ -309,10 +402,250 @@ namespace CursoWindowsFormsBiblioteca.Classes
             }
             #endregion
 
-        }
-        public class List 
-        {
-            public List<Unit> ListUnit { get; set; }
+            #region "CRUD fichario DB SQL SERVER relacional"
+
+            #region Funções Aucxiliares
+            public string ToInsert()
+            {
+                string SQL; // Declarar a variável SQL
+                SQL = @"INSERT INTO TB_Cliente (
+                        Id,
+                        Nome,
+                        NomeMae,          -- Ordem das colunas
+                        NomePai,          -- e dos valores deve ser a mesma
+                        NaoTemPai,
+                        Cpf,
+                        Genero,
+                        Cep,
+                        Logradouro,
+                        Complemento,
+                        Bairro,
+                        Cidade,
+                        Estado,
+                        Telefone,
+                        Profissao,
+                        RendaFamiliar
+                    )
+                    VALUES ("; // Parêntese de abertura para os VALUES
+                SQL += "" + this.Id + ","; // ID numérico geralmente não leva aspas
+                SQL += "'" + this.Nome + "',";
+                SQL += "'" + this.NomeMae + "',"; // Corrigido para corresponder à ordem da declaração de colunas
+                SQL += "'" + this.NomePai + "',"; // Corrigido para corresponder à ordem da declaração de colunas
+                //SQL += "'" + Convert.ToString(this.NaoTemPai) + "',";
+                SQL += Convert.ToInt32(this.NaoTemPai).ToString() + ",";
+                SQL += "'" + this.Cpf + "',";
+                SQL += "'" + Convert.ToString(this.Genero) + "',";
+                SQL += "'" + this.Cep + "',";
+                SQL += "'" + this.Logradouro + "',";
+                SQL += "'" + this.Complemento + "',";
+                SQL += "'" + this.Bairro + "',";
+                SQL += "'" + this.Cidade + "',";
+                SQL += "'" + this.Estado + "',";
+                SQL += "'" + this.Telefone + "',";
+                SQL += "'" + this.Profissao + "',";
+                SQL += "" + Convert.ToString(this.RendaFamiliar) + ");"; // RendaFamiliar numérico sem aspas, fecha parêntese, e ; no final
+                return SQL;
+            }
+
+            public string ToUpdate(string Id)
+            {
+                string SQL;
+                SQL = @"UPDATE TB_Cliente
+                        SET ";
+                SQL += "Id = " + this.Id + ",";
+                SQL += "Nome = '" + this.Nome + "',";
+                SQL += "NomePai = '" + this.NomePai + "',";
+                SQL += "NomeMae = '" + this.NomeMae + "',";
+                SQL += "NaoTemPai = " + (this.NaoTemPai ? "1" : "0") + ", ";
+                SQL += "Cpf = '" + this.Cpf + "',";
+                SQL += "Genero = '" + Convert.ToString(this.Genero) + "',";
+                SQL += "Cep = '" + this.Cep + "',";
+                SQL += "Logradouro = '" + this.Logradouro + "',";
+                SQL += "Complemento = '" + this.Complemento + "',";
+                SQL += "Bairro = '" + this.Bairro + "',";
+                SQL += "Cidade = '" + this.Cidade + "',";
+                SQL += "Estado = '" + this.Estado + "',";
+                SQL += "Telefone = '" + this.Telefone + "',";
+                SQL += "Profissao = '" + this.Profissao + "',";
+                SQL += "RendaFamiliar = '" + Convert.ToString(this.RendaFamiliar) + "'"; // Não tem vírgula no final
+                SQL += " WHERE Id = '" + Id + "';"; // O 'Id' aqui provavelmente deveria ser 'this.Id' ou um parâmetro
+                return SQL;
+            }
+
+            public Unit DataRowToUnit(DataRow dr)
+            {
+                Unit u = new Unit();
+                u.Id = dr["Id"].ToString();
+                u.Nome = dr["Nome"].ToString();
+                u.NomePai = dr["NomePai"].ToString();
+                u.NomeMae = dr["NomeMae"].ToString();
+                u.NaoTemPai = Convert.ToInt32(dr["NaoTemPai"]) != 0;
+                u.Cpf = dr["Cpf"].ToString();
+                u.Logradouro = dr["Logradouro"].ToString();
+                u.Complemento = dr["Complemento"].ToString();
+                u.Bairro = dr["Bairro"].ToString();
+                u.Cidade = dr["Cidade"].ToString();
+                u.Estado = dr["Estado"].ToString();
+                u.Telefone = dr["Telefone"].ToString();
+                u.Profissao = dr["Profissao"].ToString();
+                u.RendaFamiliar = Convert.ToDouble(dr["RendaFamiliar"]);
+                return u;
+            }
+            #endregion
+
+            public void IncluirFicharioSQLREL()
+            {
+                try
+                {
+                    string SQL;
+                    SQL = this.ToInsert();
+                    var db = new SQLServerClass();
+                    db.SQLComando(SQL);
+                    db.CloseConnection();
+
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Erro ao incluir!! " + ex.Message);
+                }
+            }
+
+            public Unit BuscarFicharioSQLREL(string Id)
+            {
+                try
+                {
+                    string SQL = "SELECT * FROM [TB_Cliente] WHERE Id = '" + Id + "'";
+                    var db = new SQLServerClass();
+                    var Dt = db.SQLQuery(SQL);
+
+                    if (Dt.Rows.Count == 0)
+                    {
+                        db.CloseConnection();
+                        throw new Exception("Identificador não existe " + Id);
+                    }
+                    else
+                    {
+                        Unit u = this.DataRowToUnit(Dt.Rows[0]);
+                        return u;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("eRRO DE BUSCA: " + ex.Message);
+                }
+            }
+
+            public void AlterarFicharioSQLREL()
+            {
+
+                try
+                {
+                    string SQL = "SELECT * FROM [TB_Cliente] WHERE Id = '" + Id + "'";
+                    var db = new SQLServerClass();
+                    var Dt = db.SQLQuery(SQL);
+
+                    if (Dt.Rows.Count == 0)
+                    {
+                        db.CloseConnection();
+                        throw new Exception("Identificador não existe " + Id);
+                    }
+                    else
+                    {
+                        SQL = this.ToUpdate(this.Id);
+                        db.SQLComando(SQL);
+                        db.CloseConnection();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("ERRO AO ALTERAR: " + ex.Message);
+                }
+
+            }
+
+            public void ApagarFicharioSQLREL()
+            {
+                try
+                {
+                    string SQL = "SELECT * FROM [TB_Cliente] WHERE Id = '" + this.Id + "'";
+                    var db = new SQLServerClass();
+                    var Dt = db.SQLQuery(SQL);
+
+                    if (Dt.Rows.Count == 0)
+                    {
+                        db.CloseConnection();
+                        throw new Exception("Identificador não existe " + Id);
+                    }
+                    else
+                    {
+                        SQL = "DELETE FROM TB_cliente WHERE Id = '" + this.Id + "'";
+                        db.SQLComando(SQL);
+                        db.CloseConnection();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("ERRO AO EXCLUIR: " + ex.Message);
+                }
+            }
+
+            public List<string> ListaFicharioSQLREL()
+            {
+                List<string> ListaBusca = new List<string>(); // Lista de strings simples
+
+                try
+                {
+                    //Verifico conexão
+                    FicharioSQLServer F = new FicharioSQLServer("TB_Cliente");
+                    if (F.status == true)
+                    {
+                        List<string> todosJson = F.BuscarTodosSQLREL();
+                        return todosJson;
+                    }
+                    else
+                    {
+                        throw new Exception(F.mensagem);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("ERRO AO BUSCAR TODOS sqlrel: " + ex.Message, ex);
+                }
+                // Nota: O gerenciamento de recursos (Dt.Dispose() e fechamento da conexão)
+                // ainda depende da implementação de db.SQLQuery().
+            }
+
+
+
+            //public List<List<string>> ListaFicharioSQLREL(string conexao)
+            //{
+            //    List<List<string>> ListaBusca = new List<List<string>>();
+            //    try
+            //    {
+            //        var SQL = "SELECT * FROM TB_Cliente";
+            //        var db = new SQLServerClass();
+            //        var Dt = db.SQLQuery(SQL);
+
+            //        for (int i = 0; i <= Dt.Rows.Count - 1; i++)
+            //        {
+            //            ListaBusca.Add(new List<string> { Dt.Rows[i]["Id"].ToString(), Dt.Rows[i]["Nome"].ToString() });
+            //        }
+
+            //        return ListaBusca;
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        throw new Exception("ERRO AO BUSCAR TODOS: " + ex.Message);
+            //    }
+            //}
+
+            #endregion
+
+
+            public class List
+            {
+                public List<Unit> ListUnit { get; set; }
+            }
         }
     }
 }

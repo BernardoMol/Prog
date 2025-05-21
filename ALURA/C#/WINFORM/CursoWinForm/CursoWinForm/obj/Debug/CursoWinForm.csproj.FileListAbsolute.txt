@@ -40,3 +40,4 @@ C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\ob
 C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\bin\Debug\Database\Fichario.mdf
 C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\bin\Debug\Database\Fichario_log.ldf
 C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\bin\Debug\CursoWindowsFormsBiblioteca.dll.config
+C:\Users\Mol\Documents\GitHub\Prog\ALURA\C#\WINFORM\CursoWinForm\CursoWinForm\obj\Debug\CursoWinForm.Frm_Agencia.resources

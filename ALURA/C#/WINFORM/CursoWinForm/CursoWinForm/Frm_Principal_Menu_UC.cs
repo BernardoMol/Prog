@@ -322,5 +322,11 @@ namespace CursoWinForm
             }
             Tbc_Aplicacoes.TabPages.Remove(TB);
         }
+
+        private void agenciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Agencia  FFrom = new Frm_Agencia();
+            FFrom.ShowDialog();
+        }
     }
 }

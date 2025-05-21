@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient; // bilblioteca que acessa o banco
 using System.Data;
 using System.Runtime.ConstrainedExecution;
+using System.Configuration;
 
 namespace CursoWindowsFormsBiblioteca.Database
 {
@@ -20,7 +21,8 @@ namespace CursoWindowsFormsBiblioteca.Database
         {
             try
             {
-                stringConn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\CursoWindowsFormsBiblioteca\\Database\\Fichario.mdf;Integrated Security=True";
+                //stringConn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Mol\\Documents\\GitHub\\Prog\\ALURA\\C#\\WINFORM\\CursoWinForm\\CursoWindowsFormsBiblioteca\\Database\\Fichario.mdf;Integrated Security=True";
+                stringConn = ConfigurationManager.ConnectionStrings["Fichario"].ConnectionString;
                 connDB = new SqlConnection(stringConn); // CRIA A CONEXÃO
                 connDB.Open(); // abre a conexão
             }
