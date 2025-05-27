@@ -11,5 +11,17 @@
     <PackageReference Include="MySql.Data" Version="9.3.0" />
     <ProjectReference Include="..\Reclamao\Reclamao.csproj" />
   </ItemGroup>
+ <!-- este trecho para excluir arquivos duplicados do output do publish: -->
+ <!-- O projeto Api_Reclamao referencia Reclamao no .csproj com <ProjectReference>.
+      No Api_Reclamao.csproj você impede que os appsettings.json da pasta Reclamao sejam copiados para o publish, evitando conflito.
+      Dockerfile copia tudo, restaura e publica só o projeto da API, que inclui o projeto Reclamao compilado junto. -->
+  <ItemGroup>
+    <None Update="..\Reclamao\appsettings.json">
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+    <None Update="..\Reclamao\appsettings.Development.json">
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
 
 </Project>

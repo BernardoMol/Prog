@@ -12,10 +12,10 @@ using Reclamao.Banco.Modelos; // é onde esta o modelo de reclamações
 
 namespace Api_Reclamao.Controladores
 {
-    // localhost:xxxx/Reclamacao/Reclamacao_Controler
+    // localhost:xxxx/Reclamacao/ReclamacaoControler
     [Route("Reclamacao/[controller]")]
 
-    public class Reclamacao_Controler : ControllerBase
+    public class ReclamacaoController : ControllerBase
     {
 
         [HttpGet]
