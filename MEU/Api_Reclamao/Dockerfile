@@ -1,12 +1,9 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0-preview AS build
 WORKDIR /src
 
-COPY Reclamao/Reclamao.csproj ./Reclamao/
-COPY Api_Reclamao.csproj ./Api_Reclamao/
+COPY . .
 
 RUN dotnet restore ./Api_Reclamao/Api_Reclamao.csproj
-
-COPY . .
 
 RUN rm -f ./Reclamao/appsettings.json ./Reclamao/appsettings.Development.json
 
