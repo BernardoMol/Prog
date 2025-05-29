@@ -74,15 +74,17 @@ app.MapControllers(); // <<< Aqui é o que faz funcionar os controllers!
 // })
 // .WithName("GetWeatherForecast");
 
-var apiURL = "http://minha-api-reclamacao.onrender.com/Reclamacao/Reclamacao";
-using (HttpClient client = new HttpClient())
-{
-    Console.Write("vou passar para a variavel");
-    HttpResponseMessage response = await client.GetAsync(apiURL);
-    string jsonResponse = await response.Content.ReadAsStringAsync();
-    Console.Write("passei");
-    Console.Write(jsonResponse);
-}
+// bom para verificar mas um erro ENORME depois de dar deploy
+// Ela tenta acessar a própria API no momento que ela está inicializando — e isso trava tudo e causa o erro 503.
+// var apiURL = "http://minha-api-reclamacao.onrender.com/Reclamacao/Reclamacao";
+// using (HttpClient client = new HttpClient())
+// {
+//     Console.Write("vou passar para a variavel");
+//     HttpResponseMessage response = await client.GetAsync(apiURL);
+//     string jsonResponse = await response.Content.ReadAsStringAsync();
+//     Console.Write("passei");
+//     Console.Write(jsonResponse);
+// }
 
 
 // var resposta = ReclamacaoController.GetAllReclamacoes();
