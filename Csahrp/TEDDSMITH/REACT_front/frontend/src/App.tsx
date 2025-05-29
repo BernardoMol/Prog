@@ -2,8 +2,18 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Cartao from './Componentes/Cartoes/Cartao';
+import ListaCartoes from './Componentes/ListaCartoes/ListaCartoes';
+
 
 function App() {
+
+
+
+
+
+
+
+
   return (
     <>
       <div>
@@ -11,16 +21,7 @@ function App() {
       </div>
       <div className="App"> 
         <div>
-          <Cartao />
-        </div>
-        <div>
-          <Cartao />
-        </div>
-        <div>
-          <Cartao />
-        </div>
-        <div>
-          <Cartao />
+          <ListaCartoes/>
         </div>
       </div>
     </>

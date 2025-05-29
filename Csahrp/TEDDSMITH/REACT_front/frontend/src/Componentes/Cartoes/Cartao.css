@@ -1,0 +1,57 @@
+.Card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    min-height: 150px; /* Altura mínima do card */
+    min-width: 600px;  /* Largura mínima do card */
+}
+
+.Card h4 {
+    display: flex; /* Permite alinhar itens na mesma linha */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    margin-bottom: 10px;
+}
+
+.Card h4 img {
+    width: 40px; /* Tamanho da bolinha da imagem */
+    height: 40px;
+    border-radius: 50%; /* Transforma a imagem em uma bolinha */
+    margin-right: 8px; /* Espaço entre a imagem e o nome */
+    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorção */
+}
+
+.Card h4 span.nomeUsuario {
+    /* Remova a linha duplicada de margin-right aqui */
+    font-weight: bold;
+    color: #333;
+    margin-right: 20px; /* Espaço entre o nome e a data */
+}
+
+.Card h4 span.dataComentario {
+    color: #777;
+    font-size: 0.9em;
+    /* Remova margin-right: 10px; pois ele não fará a data ir para a direita */
+    margin-left: auto; /* Esta propriedade é a chave para empurrar a data para a direita */
+}
+
+.Card h3 span.caixaComentario{
+    color: #555;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-top: auto
+}
+
+.Card .inputComentario { 
+  flex-grow: 1; /* Faz o input (ou textarea) crescer e ocupar todo o espaço restante */
+  width: calc(100% - 2px); 
+  /* border: 1px solid red;  */
+  box-sizing: border-box; 
+  padding: 5px; 
+  resize: vertical; 
+  background-color: lightblue; 
+}
