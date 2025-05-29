@@ -25,7 +25,7 @@
 
 import { Reclamacao } from "./TiposDeDados";
 
-const API_BASE_URL = "https://minha-api-reclamacao.onrender.com/Reclamacao/Reclamacaor";
+const API_BASE_URL = "https://minha-api-reclamacao.onrender.com/Reclamacao/Reclamacao";
 
 export const buscarTodasReclamacoes = async () => {
   try {

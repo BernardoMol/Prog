@@ -8,7 +8,13 @@ import { buscarTodasReclamacoes } from './api';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-console.log("TO BSUCANDO DADOOOS" + buscarTodasReclamacoes())
+
+// so para eu conseguir ver se ta dando certo
+// (async () => {
+// const dados = await buscarTodasReclamacoes()
+// console.log("TO BSUCANDO DADOOOS" , dados)
+// })();
+
 root.render(
   <React.StrictMode>
     <App />
