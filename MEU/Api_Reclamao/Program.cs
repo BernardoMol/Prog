@@ -10,10 +10,11 @@ builder.Services.AddCors(options =>
             // ATENÇÃO: Substitua "http://localhost:3000" pela URL exata do seu frontend.
             // Se seu frontend for deployado em outro lugar, adicione essa URL também.
             // Para desenvolvimento, "http://localhost:3000" é comum.
-            policy.WithOrigins("http://localhost:3000") 
+            policy.WithOrigins("http://localhost:3000", "https://prog-sage.vercel.app" )
                   .AllowAnyHeader()    // Permite qualquer tipo de cabeçalho na requisição (ex: Content-Type)
                   .AllowAnyMethod()    // Permite qualquer método HTTP (GET, POST, PUT, DELETE)
                   .AllowCredentials(); // Permite o envio de cookies ou credenciais (se necessário)
+                  
         });
 
     // Opcional: Se você precisar de uma política mais aberta para testes (NÃO RECOMENDADO EM PRODUÇÃO)
