@@ -10,10 +10,10 @@ const root = ReactDOM.createRoot(
 );
 
 // so para eu conseguir ver se ta dando certo
-// (async () => {
-// const dados = await buscarTodasReclamacoes()
-// console.log("TO BSUCANDO DADOOOS" , dados)
-// })();
+(async () => {
+const dados = await buscarTodasReclamacoes()
+console.log("TO BSUCANDO DADOOOS" , dados)
+})();
 
 root.render(
   <React.StrictMode>
