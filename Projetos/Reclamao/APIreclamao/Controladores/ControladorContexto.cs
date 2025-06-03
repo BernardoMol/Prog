@@ -37,9 +37,9 @@ namespace APIreclamao.Controladores
                 DataCriacaoReclamacao = r.DataCriacaoReclamacao,
                 UsuarioDTO = new UsuarioDTO
                 {
-                    UsuarioId = r.UsuarioAssociado.Id,
-                    NomeUsuario = r.UsuarioAssociado.UserName,
-                    EmailUsuario = r.UsuarioAssociado.Email  
+                    UsuarioId = r.UsuarioAssociado.UsuarioId,
+                    NomeUsuario = r.UsuarioAssociado.NomeUsuario,
+                    EmailUsuario = r.UsuarioAssociado.EmailUsuario  
                     // Reclamacoes = null, nao quero saber as outras reclamacoes dele, entao vem NULO
                     // podia ter feito um dto a mais para o USUARIO, 
                     // para essa informanão nem aparecer como nula na resposta,
@@ -63,9 +63,9 @@ namespace APIreclamao.Controladores
                                                             DataCriacaoReclamacao = r.DataCriacaoReclamacao,
                                                             UsuarioDTO = new UsuarioDTO
                                                             {
-                                                                UsuarioId = r.UsuarioAssociado.Id,
-                                                                NomeUsuario = r.UsuarioAssociado.UserName,
-                                                                EmailUsuario = r.UsuarioAssociado.Email  
+                                                                UsuarioId = r.UsuarioAssociado.UsuarioId,
+                                                                NomeUsuario = r.UsuarioAssociado.NomeUsuario,
+                                                                EmailUsuario = r.UsuarioAssociado.EmailUsuario   
                                                                 // Reclamacoes = null por padrão, ou omitido
                                                             }
                                                         })
