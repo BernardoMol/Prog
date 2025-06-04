@@ -143,3 +143,12 @@ C:\Users\Mol\Documents\GitHub\Prog\Projetos\Reclamao\APIreclamao\obj\Debug\net9.
 C:\Users\Mol\Documents\GitHub\Prog\Projetos\Reclamao\APIreclamao\obj\Debug\net9.0\APIreclamao.pdb
 C:\Users\Mol\Documents\GitHub\Prog\Projetos\Reclamao\APIreclamao\obj\Debug\net9.0\APIreclamao.genruntimeconfig.cache
 C:\Users\Mol\Documents\GitHub\Prog\Projetos\Reclamao\APIreclamao\obj\Debug\net9.0\ref\APIreclamao.dll
+C:\Users\Mol\Documents\GitHub\Prog\Projetos\Reclamao\APIreclamao\bin\Debug\net9.0\BCrypt.Net-Core.dll
+C:\Users\Mol\Documents\GitHub\Prog\Projetos\Reclamao\APIreclamao\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Mol\Documents\GitHub\Prog\Projetos\Reclamao\APIreclamao\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Mol\Documents\GitHub\Prog\Projetos\Reclamao\APIreclamao\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Mol\Documents\GitHub\Prog\Projetos\Reclamao\APIreclamao\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Mol\Documents\GitHub\Prog\Projetos\Reclamao\APIreclamao\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Mol\Documents\GitHub\Prog\Projetos\Reclamao\APIreclamao\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Mol\Documents\GitHub\Prog\Projetos\Reclamao\APIreclamao\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Mol\Documents\GitHub\Prog\Projetos\Reclamao\APIreclamao\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
